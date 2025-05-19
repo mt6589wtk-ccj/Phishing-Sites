@@ -16,7 +16,11 @@ body {
     text-align: center;
     max-width: 350px;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* 水平置中 */
 }
+
 
 h1 {
     color: #1877f2;
@@ -32,17 +36,19 @@ h2 {
 }
 
 .input-group {
-    margin-bottom: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end; /* 讓輸入框與右邊保持對齊 */
 }
 
 input[type="text"], input[type="password"] {
-    width: calc(100% - 25px);
+    width: calc(100% - 10px); /* 保留 10px 右側間距 */
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 6px;
-    font-size: 16px;
-    margin-right: 25px;
+    font-size: 20px;
 }
+
 
 .login-btn {
     background-color: #1877f2;
@@ -125,4 +131,19 @@ input[type="text"], input[type="password"] {
 
 .hidden {
     display: none;
+}
+.login-message {
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    width: calc(100% - 20px);
+    margin-right: 20px;
+    display: none; /* 預設隱藏 */
+}
+
+.fail {
+    background-color: #dc3545; /* 紅色背景 */
+    color: #fff;
 }
