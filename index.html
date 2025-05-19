@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook 登入</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="login-container">
+    <h1>facebook</h1>
+    <form>
+        <h2>登入 Facebook</h2>
+        <div id="login-success" class="login-success hidden">登入成功！</div>
+        <div class="input-group">
+            <input type="text" placeholder="電子郵件地址或手機號碼" required>
+        </div>
+        <div class="input-group">
+            <input type="password" placeholder="密碼" required>
+        </div>
+        <button type="submit" class="login-btn">登入</button>
+        <a href="#" class="forgot-account">忘記帳號？</a>
+        <div class="divider">或</div>
+        <button type="button" class="create-account-btn">建立新帳號</button>
+    </form>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
